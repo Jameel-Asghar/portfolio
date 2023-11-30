@@ -3,6 +3,23 @@
  	easing: 'slide'
  });
 
+
+
+ 
+    $(document).ready(function () {
+        // Close mobile menu when a menu item is clicked
+        $('.nav-link').on('click', function () {
+            $('#ftco-nav').collapse('hide');
+        });
+
+        // Optional: Close mobile menu when the menu button is clicked
+        $('#menu-toggle').on('click', function () {
+            $('#ftco-nav').collapse('hide');
+        });
+    });
+
+
+
 (function($) {
 
 	"use strict";
