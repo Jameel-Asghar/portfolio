@@ -27,6 +27,58 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	
+	<style>
+		/* html,
+		body {
+		  position: relative;
+		  height: 100%;
+		}
+	
+		body {
+		  background: #eee;
+		  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		  font-size: 14px;
+		  color: #000;
+		  margin: 0;
+		  padding: 0;
+		} */
+	
+		.projectSwiper {
+		  width: 100%;
+		  height: 100%;
+		}
+
+		/* .imgSwiper{
+			width: 500px;
+			height: 700px;
+		} */
+	
+		.swiper-slide {
+		  text-align: center;
+		  font-size: 18px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+	
+		.swiper-slide img {
+		  
+		  width: 100%;
+		  height: 100%;
+		  object-fit: cover;
+		}
+
+		.swiper-button-next,
+		.swiper-button-prev{
+			color: #FFBD39;
+		}
+		.swiper-pagination-bullet{
+			background-color: #FFBD39;
+		}
+	  </style>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -316,7 +368,7 @@
 	<!-- Projects Section -->
 
 	<section class="ftco-section ftco-project" id="projects-section">
-		<div class="container">
+		<div class="container" style="width: 100%; height: 500px;">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<h1 class="big big-2">Projects</h1>
@@ -324,72 +376,143 @@
 
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/project-4.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-8">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/project-5.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-8">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/project-1.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/project-6.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-								style="background-image: url(images/project-2.jpg);">
-								<div class="overlay"></div>
-								<div class="text text-center p-4">
-									<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-									<span>Web Design</span>
+			<div class="swiper mySwiper projectSwiper">
+				<div class="swiper-wrapper">
+				<!-- Slider 1 -->
+				  <div class="swiper-slide p-5">
+					<div class="row d-flex">
+						<div class="col-md-6 col-lg-5" >
+							 <div class="swiper autoPlaySlider projectSwiper">
+								<div class="swiper-wrapper">
+								  	<div class="swiper-slide ">
+										<div class="row d-flex">
+												<img src="images/project-1.jpg" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="row d-flex">
+											<img src="images/project-3.jpg" />
+										</div>
+									</div>
 								</div>
-							</div>
+								<div class="swiper-pagination"></div>
+							  </div>
+
 						</div>
-						<div class="col-md-12">
-							<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-								style="background-image: url(images/project-3.jpg);">
-								<div class="overlay"></div>
-								<div class="text text-center p-4">
-									<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-									<span>Web Design</span>
-								</div>
+						<div class="col-md-6 col-lg-7 p-5 pl-3">
+							<div class="heading-section ftco-animate pr-4">			
+								<h2 class="mb-4" style="font-size: 1.5rem;">Al-Baharaha Mobile App</h2>
+								<p  style="text-align: justify;">As a Flutter developer, I bring forth a wealth of expertise cultivated through my
+									Bachelor's degree in Software Engineering from Virtual University of Pakistan. With a
+									solid academic background and hands-on experience, I am dedicated to crafting innovative
+									and user-centric solutions, continuously enhancing my skills in the dynamic field of
+									software development.</p>
 							</div>
 						</div>
 					</div>
+				  </div>
+				<!-- Slider 2 -->
+				  <div class="swiper-slide p-5">
+					<div class="row d-flex">
+						<div class="col-md-6 col-lg-5" >
+							 <div class="swiper autoPlaySlider projectSwiper">
+								<div class="swiper-wrapper">
+								  	<div class="swiper-slide ">
+										<div class="row d-flex">
+												<img src="images/project-1.jpg" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="row d-flex">
+											<img src="images/project-3.jpg" />
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							  </div>
+
+						</div>
+						<div class="col-md-6 col-lg-7 p-5 pl-3">
+							<div class="heading-section ftco-animate pr-4">			
+								<h2 class="mb-4" style="font-size: 1.5rem;">Al-Baharaha Mobile App</h2>
+								<p  style="text-align: justify;">As a Flutter developer, I bring forth a wealth of expertise cultivated through my
+									Bachelor's degree in Software Engineering from Virtual University of Pakistan. With a
+									solid academic background and hands-on experience, I am dedicated to crafting innovative
+									and user-centric solutions, continuously enhancing my skills in the dynamic field of
+									software development.</p>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <!-- Slider 3 -->
+				  <div class="swiper-slide p-5">
+					<div class="row d-flex">
+						<div class="col-md-6 col-lg-5" >
+							 <div class="swiper autoPlaySlider projectSwiper">
+								<div class="swiper-wrapper">
+								  	<div class="swiper-slide ">
+										<div class="row d-flex">
+												<img src="images/project-1.jpg" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="row d-flex">
+											<img src="images/project-3.jpg" />
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							  </div>
+
+						</div>
+						<div class="col-md-6 col-lg-7 p-5 pl-3">
+							<div class="heading-section ftco-animate pr-4">			
+								<h2 class="mb-4" style="font-size: 1.5rem;">Al-Baharaha Mobile App</h2>
+								<p  style="text-align: justify;">As a Flutter developer, I bring forth a wealth of expertise cultivated through my
+									Bachelor's degree in Software Engineering from Virtual University of Pakistan. With a
+									solid academic background and hands-on experience, I am dedicated to crafting innovative
+									and user-centric solutions, continuously enhancing my skills in the dynamic field of
+									software development.</p>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <!-- Slider 4 -->
+				  <div class="swiper-slide p-5">
+					<div class="row d-flex">
+						<div class="col-md-6 col-lg-5" >
+							 <div class="swiper autoPlaySlider projectSwiper">
+								<div class="swiper-wrapper">
+								  	<div class="swiper-slide ">
+										<div class="row d-flex">
+												<img src="images/project-1.jpg" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="row d-flex">
+											<img src="images/project-3.jpg" />
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							  </div>
+
+						</div>
+						<div class="col-md-6 col-lg-7 p-5 pl-3">
+							<div class="heading-section ftco-animate pr-4">			
+								<h2 class="mb-4" style="font-size: 1.5rem;">Al-Baharaha Mobile App</h2>
+								<p  style="text-align: justify;">As a Flutter developer, I bring forth a wealth of expertise cultivated through my
+									Bachelor's degree in Software Engineering from Virtual University of Pakistan. With a
+									solid academic background and hands-on experience, I am dedicated to crafting innovative
+									and user-centric solutions, continuously enhancing my skills in the dynamic field of
+									software development.</p>
+							</div>
+						</div>
+					</div>
+				  </div>
 				</div>
-			</div>
+				<div class="swiper-pagination"></div>
+			  </div>
 		</div>
 	</section>
 
@@ -511,6 +634,49 @@
 	<script src="js/scrollax.min.js"></script>
 
 	<script src="js/main.js"></script>
+
+	  <!-- Swiper JS -->
+	  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	  <!-- Initialize Swiper -->
+	  <script>
+		var swiper = new Swiper(".autoPlaySlider", {
+		  spaceBetween: 30,
+		  centeredSlides: true,
+
+		   autoplay: {
+		 	delay: 5500,
+		 	disableOnInteraction: false,
+		   },
+		  pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		  },
+		  navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		  },
+		});
+	  </script>
+	  <script>
+		var swiper = new Swiper(".mySwiper", {
+		  spaceBetween: 30,
+		  centeredSlides: true,
+
+		//    autoplay: {
+		//  	delay: 5500,
+		//  	disableOnInteraction: false,
+		//    },
+		  pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		  },
+		  navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		  },
+		});
+	  </script>
 
 </body>
 
