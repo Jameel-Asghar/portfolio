@@ -109,12 +109,12 @@
 	<!-- Home Section -->
 
 	<section id="home-section" class="hero">
-		<div class="home-slider  owl-carousel">
-			<div class="slider-item ">
+		<div class="home-slider  owl-carousel ">
+			<div class="slider-item">
 				<div class="overlay"></div>
 				<div class="container">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
+						data-scrollax-parent="true" >
 						<div class="one-third js-fullheight order-md-last img"
 							style="background-image:url(images/pic2.png);">
 							<div class="overlay"></div>
@@ -633,7 +633,10 @@
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
 
+
 	<script src="js/main.js"></script>
+
+	
 
 	  <!-- Swiper JS -->
 	  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -676,6 +679,18 @@
 			prevEl: ".swiper-button-prev",
 		  },
 		});
+	  </script>
+
+	  <script>
+	  $(document).ready(function(){
+		$(".scroll").owlCarousel({
+		  items: 1,
+		  loop: true,
+		  nav: true,
+		  TouchEvent :true, // Enable navigation controls
+		  dots: true, // Enable pagination dots
+		});
+	  });
 	  </script>
 
 </body>
